@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "iPhone 16 Çıktı",
+    "content": "Apple, yeni iPhone 16 modelini tanıttı. Yenilikçi özellikleriyle dikkat çekiyor.",
+    "date": "2025-05-10",
+    "image": "https://images.unsplash.com/photo-1603791239531-1dda55e1940e",
+    "category": "Teknoloji"
+  },
+  {
+    "id": 2,
+    "title": "Mars Rover Görevi",
+    "content": "NASA, Mars'a yeni bir rover gönderdi. Keşifler merak uyandırıyor.",
+    "date": "2025-05-11",
+    "image": "https://images.unsplash.com/photo-1581836499506-4a660b39478a",
+    "category": "Bilim"
+  },
+  {
+    "id": 3,
+    "title": "AI Gelişiyor",
+    "content": "Yapay zeka teknolojileri her geçen gün yeni bir alana yayılıyor.",
+    "date": "2025-05-12",
+    "image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485",
+    "category": "Teknoloji"
+  }
+]
