@@ -1,0 +1,108 @@
+openapi: 3.0.3
+info:
+  title: garen Haber API
+  version: 1.0.0
+  description: Haber sitesinin örnek API'si
+servers:
+  - url: http://localhost:5000
+paths:
+  /api/news:
+    get:
+      summary: Tüm haberleri getir
+      responses:
+        '200':
+          description: Haber listesi
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/News'
+    post:
+      summary: Yeni haber ekle
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewsInput'
+      responses:
+        '200':
+          description: Eklenen haber
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+  /api/news/{id}:
+    put:
+      summary: Haberi güncelle
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NewsInput'
+      responses:
+        '200':
+          description: Güncellenen haber
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        '404':
+          description: Haber bulunamadı
+    delete:
+      summary: Haberi sil
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Silinen haber
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/News'
+        '404':
+          description: Haber bulunamadı
+components:
+  schemas:
+    News:
+      type: object
+      properties:
+        id:
+          type: integer
+        title:
+          type: string
+        content:
+          type: string
+        category:
+          type: string
+        date:
+          type: string
+        image:
+          type: string
+      required: [id, title, content, category, date, image]
+    NewsInput:
+      type: object
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+        category:
+          type: string
+        date:
+          type: string
+        image:
+          type: string
+      required: [title, content, category, date, image]

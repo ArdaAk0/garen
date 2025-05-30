@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Örnek Haber",
+    "content": "Bu bir test haberi",
+    "category": "Teknoloji",
+    "date": "2025-05-19",
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": 2,
+    "title": "İkinci Haber",
+    "content": "Başka bir test haberi",
+    "category": "Spor",
+    "date": "2025-05-19",
+    "image": "https://via.placeholder.com/300x200"
+  },
+  {
+    "id": 1747658633035,
+    "title": "fasdf",
+    "content": "asdfafasf",
+    "category": "asdfasdfasdf",
+    "date": "strasfdasfing",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCQyxEVEq5cnzR9PtAwMOlhVYi-LrfikNV6w&s"
+  }
+]
